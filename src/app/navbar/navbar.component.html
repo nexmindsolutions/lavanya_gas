@@ -1,0 +1,31 @@
+<!-- retrofitment-center.component.html -->
+
+<!-- NAVBAR -->
+<!-- Updated Navbar: Only Logo + Connect Button -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container px-4">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="../../assets/img/download.png" alt="Think Gas Logo" width="50" height="50" class="me-2">
+      <strong class="text-dark">RETROFITMENT <span class="text-success">CENTER</span></strong>
+    </a>
+
+    <!-- ✅ Custom Toggle Icon (e.g., Hamburger) -->
+    <div class="d-lg-none" (click)="toggleNavbar()" style="cursor: pointer;">
+      <i class="bi bi-list fs-2 text-dark"></i> <!-- Bootstrap Icons -->
+    </div>
+
+    <!-- ✅ Collapsible Navbar Section -->
+    <div class="collapse navbar-collapse justify-content-end" [ngClass]="{ 'show': isNavbarOpen }" id="navbarNav">
+      <button
+        class="btn btn-outline-success fw-semibold"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#connectModal">
+        Connect
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!--  -->

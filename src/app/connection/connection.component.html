@@ -1,0 +1,100 @@
+<!-- Connect Modal -->
+<div class="modal fade" id="connectModal" tabindex="-1" aria-labelledby="connectModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-4">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="connectModalLabel">Connect With Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <form #connectForm="ngForm" (ngSubmit)="onConnectSubmit(connectForm)">
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              ngModel
+              required
+            />
+            <small class="text-danger" *ngIf="connectForm.controls['name']?.invalid && connectForm.controls['name']?.touched">
+              Name is required.
+            </small>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              ngModel
+              required
+            />
+            <small class="text-danger" *ngIf="connectForm.controls['email']?.invalid && connectForm.controls['email']?.touched">
+              Email is required.
+            </small>
+          </div>
+
+          <div class="mb-3">
+            <label for="carName" class="form-label">Car Name</label>
+            <input
+              type="text"
+              id="carName"
+              name="carName"
+              class="form-control"
+              ngModel
+              required
+            />
+            <small class="text-danger" *ngIf="connectForm.controls['carName']?.invalid && connectForm.controls['carName']?.touched">
+              CarName is required.
+            </small>
+          </div>
+
+          <div class="mb-3">
+            <label for="carNumber" class="form-label">Car Number</label>
+            <input
+              type="text"
+              id="carNumber"
+              name="carNumber"
+              class="form-control"
+              ngModel
+              required
+            />
+            <small class="text-danger" *ngIf="connectForm.controls['carNumber']?.invalid && connectForm.controls['carNumber']?.touched">
+              CarNumber is required.
+            </small>
+          </div>
+
+          <div class="mb-3">
+            <label for="carYear" class="form-label">Car Year</label>
+            <input
+              type="number"
+              id="carYear"
+              name="carYear"
+              class="form-control"
+              ngModel
+              min="1990"
+              max="2025"
+              required
+            />
+            <small class="text-danger" *ngIf="connectForm.controls['carYear']?.invalid && connectForm.controls['carYear']?.touched">
+              CarYear is required.
+            </small>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success" [disabled]="connectForm.invalid">Submit</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

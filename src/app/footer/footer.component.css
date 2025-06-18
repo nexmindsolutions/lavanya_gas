@@ -1,0 +1,31 @@
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ed4c19;
+  text-decoration: underline;
+}
+
+.btn-outline-orange {
+  border: 2px solid #ed4c19;
+  color: #ed4c19;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-orange:hover {
+  background-color: #ed4c19;
+  color: white;
+}
+
+.social-icons i {
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #ed4c19;
+}

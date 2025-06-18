@@ -1,0 +1,127 @@
+/* retrofitment-center.component.css */
+
+.bg-image-section {
+  background-image: url('../assets/img/RFC.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+.bg-overlay {
+  max-width: 400px;
+}
+/*  */
+/* retrofitment-center.component.css */
+.tab {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*  */
+.btn-orange {
+  background: linear-gradient(to right, #f6a319, #ed4c19);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.diagonal-divider {
+  pointer-events: none;
+}
+/* think gas */
+.bg-success {
+  background-color: #43966c !important; /* matches THINK Gas green */
+}
+
+.display-6 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .display-6 {
+    font-size: 2rem;
+  }
+
+  .text-center p {
+    font-size: 0.95rem;
+  }
+}
+/* card img */
+@media (max-width: 768px) {
+  .position-absolute {
+    position: relative !important;
+    transform: none !important;
+    top: auto !important;
+    margin-top: 1rem;
+  }
+
+  .me-4 {
+    margin-right: 0 !important;
+  }
+
+  .col-md-5 {
+    width: 100%;
+  }
+}
+/*  */
+.social-sidebar {
+  position: fixed;
+  top: 45%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 999;
+  gap: 0px;
+  background: transparent;
+}
+
+.icon-link {
+  color: #f05727;
+  font-size: 1.6rem;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 50%;
+  text-decoration: none;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.icon-link:hover {
+  background-color: #f05727;
+  color: white;
+}
+/* about us */
+h4::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f05727;
+  margin-top: 5px;
+}
+/*carousel  */
+.carousel-img {
+  height: 90vh; /* You can adjust this height */
+  object-fit: cover;
+  margin: auto;
+}
+
+/* .carousel{
+  margin-top: 20%;
+} */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 250px;
+  }
+}
+
