@@ -7,10 +7,8 @@
 <!-- carousel -->
  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
+   
     <div class="carousel-item active">
-      <img src="../assets/img/cngfuellingstations-1712926541.png" class="d-block w-100 carousel-img" alt="CNG Station">
-    </div>
-    <div class="carousel-item">
       <img src="../assets/img/default-car-part-dealers-16.avif" class="d-block w-100 carousel-img" alt="Car Parts">
     </div>
     <div class="carousel-item">
@@ -34,12 +32,12 @@
 
 <!--  carousel -end -->
   <!-- ABOUT US SECTION -->
-<div class="container-fluid my-5">
+<div class="container-fluid my-5 " id="about">
   <div class="row align-items-center bg-light rounded-4 shadow-lg p-4 p-md-5">
     
     <!-- Image -->
     <div class="col-md-6 mb-4 mb-md-0">
-      <img src="../assets/img/cngfuellingstations-1712926541.png" 
+      <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2016-03/31/full/1459396986-0374.jpg?im=FeatureCrop,size=(826,465)" 
            alt="Lavanya Enterprises CNG" 
            class="img-fluid rounded-3 shadow" 
            style="max-height: 320px; object-fit: cover; width: 100%;">
@@ -176,9 +174,13 @@
           If you want to begin your journey with <span class="text-danger fw-semibold">CNG</span>, visit an RTO-approved retrofitment center and get your kit installed.
         </p>
 
-        <button class="btn btn-warning text-white fw-bold px-4 py-2 mt-2 rounded-pill" style="background-color: #f05727; border: none;">
-          LOCATE A RETROFITTER NEAR YOU
-        </button>
+         <button
+        class="btn btn-outline-orange px-3 py-2 fw-semibold"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#connectModal">
+        GET  CONNECTION
+      </button>
 
         
       </div>
@@ -189,21 +191,33 @@
 
 
 <!-- CNG Vehicle Inquiry Section -->
-<div class="container p-0 my-5">
-  <div class="row g-0 align-items-center flex-column flex-md-row position-relative" style="min-height: 280px;">
+ <div class="container my-5 px-0" id="location">
+  <div class="row g-0 align-items-stretch">
     
-    <!-- Left Text Section -->
-    <div class="col-md-6 bg-dark text-white p-4 p-md-5 text-center text-md-start">
-      <h4 class="fw-bold">INTERESTED IN BUYING A CNG VEHICLE?</h4>
-      <p class="mb-3">Check our frequently asked questions</p>
-      <button class="btn btn-orange mt-2 px-4 py-2 rounded-pill fw-semibold">KNOW MORE</button>
+    <!-- Left Location Info -->
+    <div class="col-md-6 bg-dark text-white p-4 p-md-5 d-flex flex-column justify-content-center">
+      <h4 class="fw-bold">OUR LOCATION</h4>
+      <p class="mb-3">
+        Lavanya Enterprises<br />
+        1st Floor, D.No. 27/1/123, Brindavanam, Nellore, Andhra Pradesh - 524001<br />
+        Phone: +91-9876543210<br />
+        
+      </p>
+      <button class="btn btn-orange mt-2 px-4 py-2 rounded-pill fw-semibold">GET DIRECTIONS</button>
     </div>
 
-    <!-- Right Image -->
+    <!-- Right Map Section -->
     <div class="col-md-6">
-      <img src="../assets/img/offer-web.jpg" alt="CNG Vehicle" class="img-fluid w-100 h-100" style="max-height: 250px; object-fit: cover;">
+      <iframe 
+        class="w-100 h-100"
+        style="border: 0; min-height: 280px;"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.921098700398!2d79.93383407375993!3d14.412202281664145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4cf3bf75a8e185%3A0x77a549da6ec78787!2sLavanya%20Enterprises%20-%20CNG%20Kit%20Fitting!5e1!3m2!1sen!2sin!4v1750250748283!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
-    
+
   </div>
 </div>
 
@@ -372,7 +386,65 @@
 
 
 <!-- end -->
+<!-- review -->
+ <section class="py-5 bg-light">
+  <div class="container">
+    <h3 class="fw-bold text-center mb-5">Customer Reviews</h3>
+    <div class="row g-4">
+      
+      <!-- Review Card 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <p class="text-muted fst-italic">"Great service! The CNG kit was installed professionally and works perfectly. Highly recommended!"</p>
+            <hr>
+            <div class="d-flex align-items-center">
+              <div>
+                <h6 class="mb-0">Rahul Mehta</h6>
+                <small class="text-muted">Hyundai i10 Owner</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Review Card 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <p class="text-muted fst-italic">"Lavanya Enterprises guided me throughout the process and helped with RTO formalities. Very helpful!"</p>
+            <hr>
+            <div class="d-flex align-items-center">
+              <div>
+                <h6 class="mb-0">Sneha Reddy</h6>
+                <small class="text-muted">WagonR Owner</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <p class="text-muted fst-italic">"Affordable pricing, quality installation, and friendly staff. I’m happy I switched to CNG!"</p>
+            <hr>
+            <div class="d-flex align-items-center">
+              <div>
+                <h6 class="mb-0">Arun Kumar</h6>
+                <small class="text-muted">Fleet Owner</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <!-- end -->
 <app-video></app-video>
 
 <!-- sidebar -->

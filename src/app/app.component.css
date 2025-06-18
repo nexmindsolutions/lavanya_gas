@@ -125,3 +125,14 @@ h4::after {
   }
 }
 
+.btn-outline-orange {
+  border: 2px solid #ed4c19;
+  color: #ed4c19;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-orange:hover {
+  background-color: #ed4c19;
+  color: white;
+}
