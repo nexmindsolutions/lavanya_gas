@@ -29,3 +29,8 @@
 .social-icons i:hover {
   color: #ed4c19;
 }
+
+.logo img{
+  height: 40px;
+width: 230px;
+}
