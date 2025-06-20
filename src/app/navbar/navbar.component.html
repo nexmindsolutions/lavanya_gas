@@ -5,12 +5,12 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
   <div class="container px-4">
     <!-- Logo -->
+     <img src="../../assets/img/Red and gray modern Oil And Gas Logo Design Vector Template.png" alt="Think Gas Logo" width="100" height="100" class="me-2 mt-2"> 
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <!-- <img src="../../assets/img/download.png" alt="Think Gas Logo" width="50" height="50" class="me-2"> -->
       <strong class="text-dark">RETROFITMENT <span class="text-success">CENTER</span></strong>
     </a>
 
-    <!-- ✅ Custom Toggle Icon (e.g., Hamburger) -->
+    <!-- ✅ Custom Toggle Icon -->
     <div class="d-lg-none" (click)="toggleNavbar()" style="cursor: pointer;">
       <i class="bi bi-list fs-2 text-dark"></i>
     </div>
@@ -20,26 +20,34 @@
       <!-- Navigation Links -->
       <ul class="navbar-nav me-3">
         <li class="nav-item">
-         <a class="nav-link" href="#carouselExampleFade">Home</a>
-          <!-- <a class="nav-link text-dark fw-semibold" routerLink="/home" (click)="toggleNavbar()">Home</a> -->
+          <a class="nav-link" href="#carouselExampleFade">Home</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#about">About Us</a>
-
-
+          <a class="nav-link" href="#about">About Us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/branches']">Branches</a>
+        </li>
+        
       </ul>
 
-      <!-- Connect Button -->
-      <button
-        class="btn btn-outline-success fw-semibold"
-        type="button"
-        data-bs-toggle="modal"
-        data-bs-target="#connectModal">
+      <!-- ❌ Connect Button WITHOUT modal functionality -->
+      <button class="btn btn-outline-success fw-semibold" type="button"  [routerLink]="['/contact']">
         Connect
       </button>
+      
     </div>
   </div>
 </nav>
+<div class="add bg-success text-white">
+  <marquee>
+Lavanya Enterprises</marquee>
+</div>
 
 <!--  -->
