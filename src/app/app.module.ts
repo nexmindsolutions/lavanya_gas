@@ -6,8 +6,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideoComponent } from './video/video.component';
-import { ConnectionComponent } from './connection/connection.component';
 import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { BranchesComponent } from './branches/branches.component';
+import { SafeUrlPipe } from './safe-url.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     VideoComponent,
-    ConnectionComponent
+    ContactComponent,
+    HomeComponent,
+    BranchesComponent,
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule,
