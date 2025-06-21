@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+
+
+
+<!-- Connect Modal -->
+<div class="container my-5">
+  <h3 class="text-center fw-bold mb-4"> GET  CONNECTION </h3>
+  <form #connectForm="ngForm" (ngSubmit)="onSubmit(connectForm)" class="row g-3">
+    
+    <!-- Name -->
+    <div class="col-md-6">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" id="name" name="name" class="form-control" ngModel required />
+      <small class="text-danger" *ngIf="connectForm.controls['name']?.invalid && connectForm.controls['name']?.touched">
+        Name is required.
+      </small>
+    </div>
+
+    <!-- Phone -->
+    <div class="col-md-6">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="number" id="phone" name="phone" class="form-control" ngModel required />
+      <small class="text-danger" *ngIf="connectForm.controls['phone']?.invalid && connectForm.controls['phone']?.touched">
+        Phone number is required.
+      </small>
+    </div>
+
+    <!-- Vehicle Type -->
+    <div class="col-md-6">
+      <label for="vehicleType" class="form-label">Vehicle Type</label>
+      <select class="form-select" id="vehicleType" name="vehicleType" ngModel required>
+        <option value="" disabled selected>Select your vehicle type</option>
+        <option value="Car">Car</option>
+        <option value="Auto Rickshaw">Auto Rickshaw</option>
+        <option value="Taxi">Taxi</option>
+        <option value="Van">Van</option>
+        <option value="Other">Other</option>
+      </select>
+       <small class="text-danger" *ngIf="connectForm.controls['vehicleType']?.invalid && connectForm.controls['vehicleType']?.touched">
+        vehicle Type is required.
+      </small>
+    </div>
+
+    <!-- Car Name -->
+    <div class="col-md-6">
+      <label for="carName" class="form-label">Vehicle Name/Model</label>
+      <input type="text" id="VehicleName" name="VehicleName" class="form-control" ngModel required />
+      <small class="text-danger" *ngIf="connectForm.controls['VehicleName']?.invalid && connectForm.controls['VehicleName']?.touched">
+        vehicle Name is required.
+      </small>
+    </div>
+
+    <!-- Car Number -->
+    <div class="col-md-6">
+      <label for="carNumber" class="form-label">Vehicle Number</label>
+      <input type="number" id="VehicleNumber" name="VehicleNumber" class="form-control" ngModel required />
+      <small class="text-danger" *ngIf="connectForm.controls['VehicleNumber']?.invalid && connectForm.controls['VehicleNumber']?.touched">
+        vehicle Number is required.
+      </small>
+    </div>
+
+    <!-- Address -->
+    <div class="col-md-6">
+      <label for="address" class="form-label">Address</label>
+      <textarea class="form-control" id="address" name="address" rows="3" ngModel required></textarea>
+      <small class="text-danger" *ngIf="connectForm.controls['address']?.invalid && connectForm.controls['address']?.touched">
+        vehicle Type is required.
+      </small>
+    </div>
+
+    <div class="col-12 text-center mt-4">
+      <button type="submit" class="btn btn-success px-5" [disabled]="connectForm.invalid">Submit</button>
+    </div>
+  </form>
+</div>
+
+
+<app-footer></app-footer>
