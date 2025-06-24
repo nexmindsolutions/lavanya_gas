@@ -189,109 +189,146 @@
 
 
 
-<!-- start cards  -->
+<!-- start branch cards  -->
 <div class="container my-5" id="branches">
   <h2 class="text-center fw-bold mb-4">Our CNG Retrofitment Branches</h2>
-  <div class="row g-4">
-    
-    <!-- Nellore Branch -->
-    <div class="col-md-6 col-lg-3" id="nellore">
-      <div class="card h-100 shadow">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-success">Nellore</h5>
-          <p class="card-text">
-            Lavanya Enterprises - Authorized CNG kit installer. High-quality government-approved kits and RTO support.
-          </p>
-          <ul class="ps-3">
-            <li>CNG Kit Installation</li>
-            <li>Hydro Testing</li>
-            <li>RC Book Update</li>
-          </ul>
-                  <button 
-  class="btn btn-success mt-auto w-100"  
-  [routerLink]="['/branches']"
-  [queryParams]="{ city: 'Nellore' }">
-  Get Direction
-</button>
 
+  <div class="card-slider">
+    <div class="card-track">
+
+      <!-- Nellore Branch -->
+      <div class="card-item" id="nellore">
+        <div class="card h-100 shadow">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-success">Nellore</h5>
+            <p class="card-text">Lavanya Enterprises - Authorized CNG kit installer...</p>
+            <ul class="ps-3">
+              <li>CNG Kit Installation</li>
+              <li>Hydro Testing</li>
+              <li>RC Book Update</li>
+            </ul>
+            <button class="btn btn-success mt-auto w-100"
+              [routerLink]="['/branches']"
+              [queryParams]="{ city: 'Nellore' }">Get Direction</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Tirupati Branch -->
-    <div class="col-md-6 col-lg-3" id="tirupati">
-      <div class="card h-100 shadow">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-success">Tirupati</h5>
-          <p class="card-text">
-            Expert technicians and reliable retrofitment service. Easy location access.
-          </p>
-          <ul class="ps-3">
-            <li>Certified Technicians</li>
-            <li>Filter Maintenance</li>
-            <li>Performance Tuning</li>
-          </ul>
-                  <button 
-  class="btn btn-success mt-auto w-100"  
-  [routerLink]="['/branches']"
-  [queryParams]="{ city: 'Tirupati' }">
- Get Direction
-</button>
-
+      <!-- Tirupati Branch -->
+      <div class="card-item" id="tirupati">
+        <div class="card h-100 shadow">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-success">Tirupati</h5>
+            <p class="card-text">Expert technicians and reliable retrofitment service...</p>
+            <ul class="ps-3">
+              <li>Certified Technicians</li>
+              <li>Filter Maintenance</li>
+              <li>Performance Tuning</li>
+            </ul>
+            <button class="btn btn-success mt-auto w-100"
+              [routerLink]="['/branches']"
+              [queryParams]="{ city: 'Tirupati' }">Get Direction</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Vizag Branch -->
-    <div class="col-md-6 col-lg-3" id="vizag">
-      <div class="card h-100 shadow">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-success">Vizag</h5>
-          <p class="card-text">
-            Affordable petrol to CNG conversions with eco-friendly focus.
-          </p>
-          <ul class="ps-3">
-            <li>Consultation Services</li>
-            <li>Spare Parts</li>
-            <li>Leakage Testing</li>
-          </ul>
-                                <button 
-  class="btn btn-success mt-auto w-100"  
-  [routerLink]="['/branches']"
-  [queryParams]="{ city: 'Vizag' }">
-  Get Direction
-</button>
+      <!-- Vizag Branch -->
+      <div class="card-item" id="vizag">
+        <div class="card h-100 shadow">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-success">Vizag</h5>
+            <p class="card-text">Affordable petrol to CNG conversions...</p>
+            <ul class="ps-3">
+              <li>Consultation Services</li>
+              <li>Spare Parts</li>
+              <li>Leakage Testing</li>
+            </ul>
+            <button class="btn btn-success mt-auto w-100"
+              [routerLink]="['/branches']"
+              [queryParams]="{ city: 'Vizag' }">Get Direction</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Vizianagaram Branch -->
-    <div class="col-md-6 col-lg-3" id="vizianagaram">
-      <div class="card h-100 shadow">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-success">Vizianagaram</h5>
-          <p class="card-text">
-            Trusted CNG installation services with safety-first approach.
-          </p>
-          <ul class="ps-3">
-            <li>Pipe Installation</li>
-            <li>Kit Servicing</li>
-            <li>Endorsement Help</li>
-          </ul>
-                      <button 
-  class="btn btn-success mt-auto w-100"  
-  [routerLink]="['/branches']"
-  [queryParams]="{ city: 'Vizianagaram' }">
-  Get Direction
-</button>
+      <!-- Vizianagaram Branch -->
+      <div class="card-item" id="vizianagaram">
+        <div class="card h-100 shadow">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-success">Vizianagaram</h5>
+            <p class="card-text">Trusted CNG installation services with safety-first approach.</p>
+            <ul class="ps-3">
+              <li>Pipe Installation</li>
+              <li>Kit Servicing</li>
+              <li>Endorsement Help</li>
+            </ul>
+            <button class="btn btn-success mt-auto w-100"
+              [routerLink]="['/branches']"
+              [queryParams]="{ city: 'Vizianagaram' }">Get Direction</button>
+          </div>
         </div>
       </div>
-    </div>
 
+      <!-- Vijayawada Branch -->
+      <div class="card-item" id="vijayawada">
+        <div class="card h-100 shadow">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-success">Vijayawada</h5>
+            <p class="card-text">Reliable and efficient CNG conversion center in the city.</p>
+            <ul class="ps-3">
+              <li>Engine Tuning</li>
+              <li>Inspection Support</li>
+              <li>Customer Guidance</li>
+            </ul>
+            <button class="btn btn-success mt-auto w-100"
+              [routerLink]="['/branches']"
+              [queryParams]="{ city: 'Vijayawada' }">Get Direction</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hyderabad Branch -->
+      <div class="card-item" id="hyderabad">
+        <div class="card h-100 shadow">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-success">Hyderabad</h5>
+            <p class="card-text">One-stop solution for all CNG retrofitment needs in Hyderabad.</p>
+            <ul class="ps-3">
+              <li>Pipe Installation</li>
+              <li>Kit Servicing</li>
+              <li>Endorsement Help</li>
+            </ul>
+            <button class="btn btn-success mt-auto w-100"
+              [routerLink]="['/branches']"
+              [queryParams]="{ city: 'Hyderabad' }">Get Direction</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rajamahendravaram Branch -->
+      <div class="card-item" id="rajamahendravaram">
+        <div class="card h-100 shadow">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-success">Rajamahendravaram</h5>
+            <p class="card-text">CNG conversions backed by certified professionals and service excellence.</p>
+            <ul class="ps-3">
+              <li>Pipe Installation</li>
+              <li>Kit Servicing</li>
+              <li>Endorsement Help</li>
+            </ul>
+            <button class="btn btn-success mt-auto w-100"
+              [routerLink]="['/branches']"
+              [queryParams]="{ city: 'Rajamahendravaram' }">Get Direction</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
- <!-- end -->
+
+
+ <!-- end of branch cards -->
 
 
 
@@ -428,62 +465,102 @@
 
 <!-- end -->
 <!-- review -->
- <section class="py-5 bg-light">
-  <div class="container">
-    <h3 class="fw-bold text-center mb-5">Customer Reviews</h3>
-    <div class="row g-4">
-      
+<div class="container my-5">
+  <h3 class="fw-bold text-center mb-4">Customer Reviews</h3>
+
+  <div class="card-slider">
+    <div class="card-track">
+
       <!-- Review Card 1 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow h-100">
-          <div class="card-body">
-            <p class="text-muted fst-italic">"Great service! The CNG kit was installed professionally and works perfectly. Highly recommended!"</p>
-            <hr>
-            <div class="d-flex align-items-center">
-              <div>
-                <h6 class="mb-0">Rahul Mehta</h6>
-                <small class="text-muted">Hyundai i10 Owner</small>
-              </div>
-            </div>
-          </div>
+      <div class="card-item">
+        <div class="card-body">
+          <p class="card-text text-muted fst-italic">
+            "Great service! The CNG kit was installed professionally and works perfectly. Highly recommended!"
+          </p>
+          <hr>
+          <h6 class="mb-0">Rahul Mehta</h6>
+          <small class="text-muted">Hyundai i10 Owner</small>
         </div>
       </div>
 
       <!-- Review Card 2 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow h-100">
-          <div class="card-body">
-            <p class="text-muted fst-italic">"Lavanya Enterprises guided me throughout the process and helped with RTO formalities. Very helpful!"</p>
-            <hr>
-            <div class="d-flex align-items-center">
-              <div>
-                <h6 class="mb-0">Sneha Reddy</h6>
-                <small class="text-muted">WagonR Owner</small>
-              </div>
-            </div>
-          </div>
+      <div class="card-item">
+        <div class="card-body">
+          <p class="card-text text-muted fst-italic">
+            "Lavanya Enterprises guided me throughout the process and helped with RTO formalities. Very helpful!"
+          </p>
+          <hr>
+          <h6 class="mb-0">Sneha Reddy</h6>
+          <small class="text-muted">WagonR Owner</small>
         </div>
       </div>
 
       <!-- Review Card 3 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow h-100">
-          <div class="card-body">
-            <p class="text-muted fst-italic">"Affordable pricing, quality installation, and friendly staff. I’m happy I switched to CNG!"</p>
-            <hr>
-            <div class="d-flex align-items-center">
-              <div>
-                <h6 class="mb-0">Arun Kumar</h6>
-                <small class="text-muted">Fleet Owner</small>
-              </div>
-            </div>
-          </div>
+      <div class="card-item">
+        <div class="card-body">
+          <p class="card-text text-muted fst-italic">
+            "Affordable pricing, quality installation, and friendly staff. I’m happy I switched to CNG!"
+          </p>
+          <hr>
+          <h6 class="mb-0">Arun Kumar</h6>
+          <small class="text-muted">Fleet Owner</small>
         </div>
       </div>
 
+      <!-- Review Card 4 -->
+      <div class="card-item">
+        <div class="card-body">
+          <p class="card-text text-muted fst-italic">
+            "Installation was quick, and the performance has been great since. Will recommend to friends."
+          </p>
+          <hr>
+          <h6 class="mb-0">Kiran Patel</h6>
+          <small class="text-muted">Swift Dzire Owner</small>
+        </div>
+      </div>
+<!-- card 5 -->
+    <div class="card-item">
+  <div class="card-body">
+    <p class="card-text text-muted fst-italic">
+      "Got my petrol Swift converted to CNG at Lavanya Enterprises. Smooth ride, better mileage, and great service!"
+    </p>
+    <hr>
+    <h6 class="mb-0">Rajesh Verma</h6>
+    <small class="text-muted">Swift Owner</small>
+  </div>
+</div> 
+      
+      <!-- card 6 -->
+      
+     <div class="card-item">
+  <div class="card-body">
+    <p class="card-text text-muted fst-italic">
+      "They completed the CNG installation within a day and helped with insurance and RTO updates too."
+    </p>
+    <hr>
+    <h6 class="mb-0">Manoj Patil</h6>
+    <small class="text-muted">Taxi Driver</small>
+  </div>
+</div>  
+
+ 
+      <!-- card 7 -->
+
+<div class="card-item">
+  <div class="card-body">
+    <p class="card-text text-muted fst-italic">
+      "Excellent after-sales support. They answer queries quickly and even sent reminders for checkups."
+    </p>
+    <hr>
+    <h6 class="mb-0">Ravi Teja</h6>
+    <small class="text-muted">Delivery Executive</small>
+  </div>
+</div>
+
     </div>
   </div>
-</section>
+</div>
+
 
  <!-- end -->
 <app-video></app-video>

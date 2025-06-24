@@ -1,24 +1,25 @@
 <app-navbar></app-navbar>
+  <!-- Branch Selection Buttons -->
+  <div class="container my-5">
+    <div *ngIf="selectedBranch">
+      <div class="main_head"> <img [src]="selectedBranch.image" class="card-img-top  main-image" alt="{{ selectedBranch.name }} Image" />
+        <div class="branch_head"> <h2 class="underline">{{selectedBranch.branch}}</h2>  
+       <p>{{ selectedBranch. description }}</p></div>
+      </div>
 
-<!-- Branch Selection Buttons -->
-<div class="container my-5">
-  <div *ngIf="selectedBranch">
+      <h4> <i class="bi bi-geo-alt-fill  me-2"></i>{{ selectedBranch.name }}</h4>
 
-    <h4>   <i class="bi bi-geo-alt-fill  me-2"></i>{{ selectedBranch.name }}</h4>
-    
-    <!-- Location Icon before address -->
-    <p>{{ selectedBranch.address }}</p>
-    
-    <iframe [src]="selectedBranch.iframeSrc | safeUrl"
-            width="100%" height="300" style="border:0;"
-            allowfullscreen="" loading="lazy"></iframe>
+      <!-- Location Icon before address -->
+      <p>{{ selectedBranch.address }}</p>
 
-    <!-- Button with location icon -->
-    <a class="btn btn-outline-success mt-3" 
-       [href]="selectedBranch.directionLink" target="_blank">
-      <i class="bi bi-geo-alt me-1"></i> Get Directions
-    </a>
+      <iframe [src]="selectedBranch.iframeSrc | safeUrl" width="100%" height="300" style="border:0;" allowfullscreen=""
+        loading="lazy"></iframe>
+
+      <!-- Button with location icon -->
+      <a class="btn btn-outline-success mt-3" [href]="selectedBranch.directionLink" target="_blank">
+        <i class="bi bi-geo-alt me-1"></i> Get Directions
+      </a>
+    </div>
   </div>
-</div>
 
-<app-footer></app-footer>
+  <app-footer></app-footer>
