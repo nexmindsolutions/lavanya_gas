@@ -12,7 +12,20 @@
       <!-- Location Icon before address -->
       <p>{{ selectedBranch.address }}</p>
 
+      <iframe [src]="selectedBranch.iframeSrc | safeUrl" width="100%" height="300" style="border:0;" allowfullscreen=""
+        loading="lazy"></iframe>
 
+      <!-- Button with location icon -->
+    </div>
+
+    <!-- Button with location icon -->
+   <div class="text-center">
+  <a class="btn btn-outline-success mt-3"
+     [href]="selectedBranch.directionLink"
+     target="_blank">
+    <i class="bi bi-geo-alt me-1"></i> Get Directions
+  </a>
+</div>
   </div>
 
   <app-footer></app-footer>
